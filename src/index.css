@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #60A5FA;
+  --bg-color: #fff;
+
+  --border-radius: 1rem;
+  --button-radius: 0.7rem;
+
+  --scale: 0.95
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* Main */
+
+.mainContainer {
+  width: 100%;
+}
+
+.mainText {
+  font-size: 22px;
+}
+
+.hiddenComponent {
+  display: none;
+}
+
+.right-margin {
+  margin-right: 1rem;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 4rem;
+
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 2rem;
+
+  justify-content: space-between;
+
+  background-color: var(--bg-color);
+}
+
+/* Name */
+
+.nameBar {
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+}
+
+.nameInput {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  padding: 0.5rem;
+
+  border: 2px solid var(--main-color);
+  border-radius: var(--border-radius);
+
+  outline: none;
+}
+
+/* SendForm */
+
+.send {
+  width: 10%;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.sendForm {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  text-align: center;
+}
+
+.form {
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: center;
+}
+
+.input-button {
+  cursor: pointer;
+}
+
+/* Button */
+
+.btn {
+  width: auto;
+
+  padding: 1rem;
+
+  border: 2px solid var(--main-color);
+  border-radius: var(--button-radius);
+
+  background-color: var(--bg-color);
+
+  color: var(--main-color);
+}
+
+.btn:hover {
+  color: var(--bg-color);
+
+  background-color: var(--main-color);
+}
+
+.btn:active {
+  transform: scale(var(--scale));
+}
+
+
+/* Finish */
+
+.finish {
+  display: flex;
+}
+
+.finishText {
+  width: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 1rem;
+
+  border: 2px solid var(--main-color);
+  border-radius: var(--border-radius);
+
+  background-color: var(--bg-color);
+}
+
+/* Test */
+
+.test {
+  display: flex;
+
+  margin-top: 5rem;
+
+  flex-direction: column;
+}
+
+.questions {
+  width: 50%;
+
+  margin: auto;
+}
+
+/* CheckboxQuestion */
+
+.checkboxQuestion {
+  width: 100%;
+
+  margin-bottom: 2rem;
+}
+
+.checkboxQuestionHeader {
+  width: 100%;
+
+  margin-bottom: 1rem;
+
+  text-align: justify;
+  font-weight: bold;
+}
+
+.checkboxQuestionList {
+  width: 100%;
+}
+
+.checkboxQuestionListElement {
+  width: 100%;
+
+  margin-bottom: 1rem;
+
+  display: flex;
+
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 0.5rem;
+}
+
+.checkbox:active {
+  transform: scale(var(--scale));
+}
+
+.checkboxIcon {
+  width: 100%;
+  height: 100%;
+
+  color: var(--main-color);
+}
+
+.checkboxText {
+  width: 100%;
+
+  text-align: justify;
+  align-items: center;
+}
